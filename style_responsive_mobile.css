@@ -108,6 +108,11 @@
         max-width: 512px;
     }
 
+    .copy_image img{
+        width: 100%;
+        max-width: none;
+    }
+
     .header_right, .copy_image {
         align-self: center;
     }
