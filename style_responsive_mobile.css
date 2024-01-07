@@ -14,10 +14,6 @@
     
 }
 
-@media screen and (min-width:390px) and (max-width:440px) {
-    .header_left h1{
-        max-width: 300px;
-    }
     
 }
 
@@ -28,6 +24,10 @@
     }
 }
 
+@media screen and (min-width:390px) and (max-width:440px) {
+    .header_left h1{
+        max-width: 300px;
+    }
 
 @media screen and (min-width: 500px) and (max-width: 1024px) {
     
