@@ -414,8 +414,9 @@
     .articles_card_section{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
+        flex-wrap: wrap;
 
         gap: 48px;
         min-width: 100%;
@@ -475,7 +476,7 @@
     }
 
     .h4_form{
-        margin-top:-4px;
+        margin-top:-7px;
     }
 
     .footer_form_section{
@@ -897,6 +898,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        
 
         gap: 48px;
         min-width: 100%;
@@ -956,7 +958,7 @@
     }
 
     .h4_form{
-        margin-top:-4px;
+        margin-top:-7px;
     }
 
     .footer_form_section{

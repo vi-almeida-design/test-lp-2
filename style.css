@@ -65,7 +65,7 @@ header{
 .header_left{
     display: flex;
     flex-direction: column;
-    min-width: 312px;
+    width: 100%;
     align-items: flex-start;
     align-content: flex-start;
     gap: 24px;
@@ -75,6 +75,7 @@ header{
 .header_left p {
     text-align: left;
 }
+
 
 .header_right img{
     width: 100%;
@@ -147,14 +148,18 @@ section.benefits{
     max-width: 420px;
 }
 
+.benefits_card_section {
+    max-width: 100%;
+}
+
 .benefits_card{
     display: flex;
     max-width: 300px;
     padding: 24px 32px;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
-    margin-bottom:24px;
+    gap: 12px;
+    margin-bottom:30px;
 
     border-radius: 8px;
     background: var(--Neutral-White, #FFF);
@@ -487,14 +492,16 @@ section.CTA{
 /*Start: Footer Mobile*/
 
 footer.footer_mobile{
+    background: var(--Neutral-Black, #263238);
+}
+
+.wrapper_footer_mobile{
     display: flex;
     padding: 60px 30px;
     align-items: flex-start;
     align-content: flex-start;
     gap: 48px;
     flex-wrap: wrap;
-
-    background: var(--Neutral-Black, #263238);
 }
 
 .footer_mobile_logo img{
@@ -511,11 +518,12 @@ footer.footer_mobile{
 }
 
 .footer_mobile_links ul{
-    min-width: 135px;
+    width: 135px;
     vertical-align: top;
     margin-top: -10px;
     padding: 0px;
 }
+
 
 #footer_header{
     color: var(--Neutral-White, #FFF);
@@ -581,7 +589,7 @@ input{
 .input-group-text {
     position: absolute;
     right: 13px;
-    top: 7px;
+    top: 8.5px;
   }
 
 .footer_mobile_end{

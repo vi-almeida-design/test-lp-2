@@ -5,156 +5,261 @@
     padding: 0;
 }
 
-@media screen and (max-width: 340px){
+@media screen and (min-width:340px) {
+
     h1{
-        font-size: 48px;
-        line-height: 54px;
-        max-width: 270px;
+        font-size: 56px;
+        line-height: 64px;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .header_left h1, p{
+        max-width: 380px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+    
+    /*Start: Font-size changes*/
+    
+    .button_1, .button_2, .button_3 {
+        font-size: 18px;
+    }
+
+    h2{
+        font-size: 42px;
+        line-height: 130%;
+    }
+
+    .stats_cards_text h2{
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 45px; /* 122.222% */
+    }
+
+    h3{
+        font-size: 30px;
+        line-height: 125%;
+    }
+
+    h4{
+        font-size: 21px;
+    }
+        
+    .body_regular_2{
+        font-size: 21px;
+        line-height: 150% /* 150% */
+    }
+
+    p#body_regular_2{
+        font-size: 18px;
+        line-height: 125% /* 150% */
+    }
+
+    .body_medium_2{
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .body_regular_3{
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .article_author p{
+        font-size: 18px;
+    }
+
+    /*End: Font-size changes*/
+
+    /*Start: Padding and all things of sorts*/
+
+    .wrapper_mobile_nav_bar{
+        padding: 30px 48px;
+    }
+
+    .header{
+        padding: 12px 48px 60px 48px;
+    }
+
+    section.clients, .wrapper_stats, section.article, .wrapper_CTA, footer.footer_mobile, section.copy_2 {
+        padding: 60px 48px;
+    }
+
+    section.benefits, section.copy {
+        padding: 0px 48px 60px;
+    }
+
+    .wrapper_footer_mobile{
+        padding: 0px;
+    }
+
+    /*End: Padding and all things of sorts*/
+
+    /*Start: Changes to Body CSS*/
+
+    .wrapper_mobile_nav_bar :nth-child(1){
+        width: 150px;
     }
 
     .header_left p{
-        max-width: 270px;
-    }
-
-    .header_left, .header_right {
-        width: 270px;
-    }
-}
-
-@media screen and (min-width: 400px) and (max-width: 480px){
-    .header_left, .header_right, .copy_text, .copy_image {
-        max-width: 370px;
-    }
-
-    .header_right, .copy_image {
-        align-self: center;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width: 650px){
-    .header_left, .header_right, .copy_text, .copy_image, .stats_text h2, .articles_text {
-        max-width: 420px;
+        max-width: 512px;
     }
 
     .header_right, .copy_image {
         align-self: center;
     }
 
-    nav.mobile_nav_bar{
-        padding: 24px 42px;
+    .header_right img, .copy_image {
+        max-width: 520px;
     }
 
-    .header{
-        padding: 12px 42px 60px 42px;
+    .clients_logos{
+        max-width: none;
+        gap: 24px 36px;
     }
 
-    section.clients, .wrapper_stats, section.article, .wrapper_CTA, footer.footer_mobile, section.copy_2 {
-        padding: 60px 42px;
+    .benefits_cards_icon img{
+        width: 72px;
     }
 
-    section.benefits, section.copy {
-        padding: 0px 42px 60px;
+    .benefits_card {
+        margin-bottom:0px;
     }
 
-    .header, section.copy, section.copy_2{
-        align-items: center;
+    .benefits_card_section{
+        display: flex;
+        justify-content: center;
+        gap: 36px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    .copy_text, .copy_image{
-        max-width: 420px;
+    section.benefits{
+        gap:32px;
     }
 
-    .article.copy_text, .copy_image, .article_left, .article_right{
-        max-width: 420px;
+    .benefits_text h2{
+        max-width: 610px;
     }
 
-    .wrapper_article {
-        align-items: center;
-        padding: 0px;
+    .stats_text h2, p{
+        max-width: none;
+        max-width: 600px;
+    }
+
+    .stats_cards_section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 36px;
+        justify-content: center;
+        max-width: 720px;
+    }
+
+    .stats_cards{
+        width: 248px;
+    }
+
+    .clients_logos img, .article_logos_mobile img{
+        width: 54px;
+    }
+
+    .copy_text p, .article_copy p{
+        max-width: none;
+    }
+
+    .articles_text h2{
+        min-width: 400px;
+        max-width: none;
+    }
+
+    .articles_card_section{
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .wrapper_CTA{
+        padding: 60px 0px;
         align-items: center;
+        gap: 32px;
     }
 
-    .wrapper_CTA h1{
+    section.CTA h1{
+        max-width: 720px;
         text-align: center;
-        max-width: 450px;
+        line-height: 1.15;
     }
 
-    .wrapper_mobile_nav_bar{
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        max-width: 420px;
-        margin: 0 auto;;
+    #footer_header{
+        font-size: 20px;
     }
 
+    .footer_mobile_links li, a, #form_input, .body_regular_3_white {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .footer_social_media{
+        gap:18px;
+    }
+
+    .footer_social_media img{
+        width: 42px;
+    }  
+
+    .input-group-text {
+        position: absolute;
+        right: 13px;
+        top: 7px;
+      }
+
+      .footer_mobile_links :nth-child(2){
+        margin-right: 18px;
+      }
+
+    .h4_form{
+        margin-top: -7px;
+    }
+    
 }
 
-
-@media screen and (min-width: 650px) and (max-width: 1024px){
-    .header_left, .header_right, .copy_text, .copy_image, .stats_text h2, .articles_text {
-        max-width: 720px;
-    }
-
-    .header_right, .copy_image {
-        align-self: center;
-    }
-
-    nav.mobile_nav_bar{
-        padding: 24px 42px;
-    }
+@media screen and (min-width: 850px) and (max-width: 1024px) {
+    
+    /*Start: Padding and all things of sorts*/
 
     .wrapper_mobile_nav_bar{
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        max-width: 720px;
+        padding: 24px 48px;
+    }
+
+    .header{
+        padding: 12px 0px 60px 0px;
+    }
+
+    section.clients, .wrapper_stats, section.article, section.articles, .wrapper_CTA, footer.footer_mobile, section.copy_2 {
+        padding: 60px 0px;
+    }
+
+    section.benefits, section.copy {
+        padding: 0px 0px 60px;
+    }
+
+    .wrapper, .wrapper_desktop_nav_bar .wrapper_stats, .wrapper_article, .wrapper_CTA, .wrapper_footer_desktop{
+        width: 780px;
         margin: 0 auto;
     }
 
-    .header{
-        padding: 12px 42px 60px 42px;
+    section.clients, section.benefits, section.copy, section.copy_2, section.articles, .wrapper_footer_mobile, .wrapper_mobile_nav_bar {
+        width: 780px;
+        margin: 0 auto;
     }
 
-    section.clients, .wrapper_stats, section.article, .wrapper_CTA, footer.footer_mobile, section.copy_2 {
-        padding: 60px 42px;
+    .wrapper_mobile_nav_bar{
+        padding: 30px 0px;
     }
 
-    section.benefits, section.copy {
-        padding: 0px 42px 60px;
-    }
-
-    .header, section.copy, section.copy_2{
-        align-items: center;
-    }
-
-    .copy_text, .copy_image{
-        max-width: 720px;
-    }
-
-    .article.copy_text, .copy_image, .article_left, .article_right{
-        max-width: 720px;
-    }
-
-    .wrapper_article {
-        align-items: center;
-        padding: 0px;
-    }
-
-    .wrapper_CTA{
-        align-items: center;
-    }
-
-    .wrapper_CTA h1{
-        text-align: center;
-        max-width: 450px;
-    }
+    /*End: Padding and all things of sorts*/
 
 
 }

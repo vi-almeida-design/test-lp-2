@@ -2,15 +2,15 @@
 
 h1{
     color: var(--Neutral-D_Grey, #4D4D4D);
-    font-size: 56px;
+    font-size: 48px;
     font-weight: 600;
-    line-height: 64px; /* 118.75% */}
+    line-height: 54px; /* 118.75% */}
     
     h2{
     color: var(--Neutral-D_Grey, #4D4D4D);
     font-size: 36px;
     font-weight: 600;
-    line-height: 44px; /* 122.222% */
+    line-height: 45px; /* 122.222% */
     }
     
     h3 {
