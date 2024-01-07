@@ -15,15 +15,16 @@
 }
 
 
-@media screen and (min-width:390px) and (max-width:416px) {
+@media screen and (min-width:390px) and (max-width:440px) {
     .header_left h1{
         max-width: 300px;
     }
     
 }
 
-@media screen and (min-width:416px) and (max-width: 600px){
+@media screen and (min-width:440px) and (max-width: 600px){
     .header_left h1, p{
+
         max-width: 380px;
     }
 }
