@@ -8,6 +8,9 @@
     <title>Nexcent</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_guide.css">
+    <link rel="stylesheet" href="style_responsive_mobile.css">
+    <link rel="stylesheet" href="style_responsive_desktop.css">
     <link rel="stylesheet" href="main.js">
     
     <!--Fontes da página-->
@@ -21,36 +24,57 @@
 <body>  
     
     <nav class="mobile_nav_bar ">
-        <img src="imgs/Nexcent_Logo.svg" alt="">
+        <div class="wrapper_mobile_nav_bar">
+            <img src="imgs/Nexcent_Logo.svg" alt="">
+    
+            <img src="imgs/Docker_Icon.svg" alt="">
+        </div>
+    </nav>
 
-        <img src="imgs/Docker_Icon.svg" alt="">
+    <nav class="desktop_nav_bar ">
+        <div class="wrapper_desktop_nav_bar">
+           <a href="#" class="desktop_logo"><img src="imgs/Nexcent_Logo.svg" alt=""></a>
+    
+            <div class="desktop_nav_bar_links">
+                <ul>
+                    <li> <a href="#">About Us</a></li>
+                    <li> <a href="#">Blog</a></li>
+                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="#">Pricing</a></li>
+                    <li> <a href="#">Testimonials</a></li>
+                    
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <header>
+        <div class="wrapper">
+            <div class="header">
+                <div class="header_left ">
         
-        <div class="header_left ">
-
-            <h1> Lessons and insights <span class="green_highlight"> from 8 years of experience</span></h1>
-    
-            <p class="body_regular_2">Where to grow your business as a photographer: site or social media?</p>
-    
-            <a href="#" class="button_1"> Register </a>
-
+                    <h1> Lessons and insights <span class="green_highlight"> from 8 years of experience</span></h1>
+            
+                    <p class="body_regular_2">Where to grow your business as a photographer: site or social media?</p>
+            
+                    <a href="#" class="button_1"> Register </a>
+        
+                </div>
+        
+                <div class="header_right ">
+        
+                    <img src="imgs/Illustration_1.png" alt="">
+        
+                </div>
+            </div>
         </div>
-
-        <div class="header_right ">
-
-            <img src="imgs/Illustration_1.png" alt="">
-
-        </div>
-
     </header>
 
     <section class="clients">
         
         <div class="clients_text">
-            <h2 class="h2_center">Our Clients</h2>
-            <p class="body_regular_2_center">Where to grow your business as a photographer: site or social media?</p>
+            <h2 class="h2">Our Clients</h2>
+            <p class="body_regular_2">Where to grow your business as a photographer: site or social media?</p>
         </div>
 
         <div class="clients_logos">
@@ -67,6 +91,8 @@
 
             <img src="imgs/Client_Logo_6.svg" alt="">
 
+            <img src="imgs/Client_Logo_3.svg" alt="">
+
         </div>
 
     </section>
@@ -75,51 +101,54 @@
 
         <div class="benefits_text">
 
-            <h2 class="h2_center">Manage your entire community in a single system</h2>
+            <h2 class="h2">Manage your entire community in a single system</h2>
 
-            <p class="body_regular_2_center">Who is Nextcent suitable for?
+            <p class="body_regular_2">Who is Nextcent suitable for?
              </p>
 
         </div>
 
-        <div class="benefits_card">
-             
-            <div class="benefits_cards_icon">
-                <img src="imgs/Icon_1.svg" alt="">
-                <h3 class="h3_center">Membership Organisations</h3>
-             </div>
-
-             <div class="benefits_cards_text">
-                <p class="body_regular_3_center">Our membership management software provides full automation of membership renewals and payments</p>
-             </div>
-
-        </div>
-        
-        <div class="benefits_card">
-             
-            <div class="benefits_cards_icon">
-                <img src="imgs/Icon_2.svg" alt="">
-                <h3 class="h3_center">National Associations</h3>
-             </div>
-
-             <div class="benefits_cards_text">
-                <p class="body_regular_3_center">Our membership management software provides full automation of membership renewals and payments</p>
-             </div>
-
-        </div>
-
-        <div class="benefits_card">
-             
-            <div class="benefits_cards_icon">
-                <img src="imgs/Icon_3.svg" alt="">
-                <h3 class="h3_center">Clubs And Groups</h3>
-             </div>
-
-             <div class="benefits_cards_text">
-
-                <p class="body_regular_3_center">Our membership management software provides full automation of membership renewals and payments</p>
-             </div>
-
+        <div class="benefits_card_section">
+            
+            <div class="benefits_card">
+                 
+                <div class="benefits_cards_icon">
+                    <img src="imgs/Icon_1.svg" alt="">
+                    <h3 class="h3">Membership Organisations</h3>
+                 </div>
+    
+                 <div class="benefits_cards_text">
+                    <p class="body_regular_3">Our membership management software provides full automation of membership renewals and payments</p>
+                 </div>
+    
+            </div>
+            
+            <div class="benefits_card">
+                 
+                <div class="benefits_cards_icon">
+                    <img src="imgs/Icon_2.svg" alt="">
+                    <h3 class="h3">National Associations</h3>
+                 </div>
+    
+                 <div class="benefits_cards_text">
+                    <p class="body_regular_3">Our membership management software provides full automation of membership renewals and payments</p>
+                 </div>
+    
+            </div>
+    
+            <div class="benefits_card">
+                 
+                <div class="benefits_cards_icon">
+                    <img src="imgs/Icon_3.svg" alt="">
+                    <h3 class="h3">Clubs And <br>Groups</h3>
+                 </div>
+    
+                 <div class="benefits_cards_text">
+    
+                    <p class="body_regular_3">Our membership management software provides full automation of membership renewals and payments</p>
+                 </div>
+    
+            </div>
         </div>
 
 
@@ -144,51 +173,56 @@
 
     <section class="stats">
 
-        <div class="stats_text">
-            <h2 class="h2_center">Helping a local <span class="green_highlight">business <br>reinvent itself</span></h2>
-
-            <p class="body_regular_2_center">We reached here with our hard <br>work and dedication</p>
+        <div class="wrapper_stats">
+            <div class="stats_text">
+                <h2 class="h2">Helping a local <span class="green_highlight">business reinvent itself</span></h2>
+    
+    
+                <p id="body_regular_2">We reached here with our hard <br>work and dedication</p>
+    
+            </div>
+    
+            <div class="stats_cards_section">
+               
+                <div class="stats_cards">
+                    <img src="imgs/Icon_4.svg" alt="">
+                    
+                    <div class="stats_cards_text">
+                        <h2>2,245,341</h2>
+                        <p class="body_regular_2">Members</p>
+                    </div>
+                </div>
+    
+                <div class="stats_cards">
+                    <img src="imgs/Icon_5.svg" alt="">
+                    
+                    <div class="stats_cards_text">
+                        <h2>46,328</h2>
+                        <p class="body_regular_2">Clubs</p>
+                    </div>
+                </div>
+    
+                <div class="stats_cards">
+                    <img src="imgs/Icon_6.svg" alt="">
+                    
+                    <div class="stats_cards_text">
+                        <h2>828,867</h2>
+                        <p class="body_regular_2">Events Booked</p>
+                    </div>
+                </div>
+    
+                <div class="stats_cards">
+                    <img src="imgs/Icon_7.svg" alt="">
+    
+                    <div class="stats_cards_text">
+                        <h2>1,926,436</h2>
+                        <p class="body_regular_2">Payments</p>
+                    </div>
+                </div>
+    
+            </div>
         </div>
 
-        <div class="stats_cards_section">
-           
-            <div class="stats_cards">
-                <img src="imgs/Icon_4.svg" alt="">
-                
-                <div class="stats_cards_text">
-                    <h2>2,245,341</h2>
-                    <p class="body_regular_2">Members</p>
-                </div>
-            </div>
-
-            <div class="stats_cards">
-                <img src="imgs/Icon_5.svg" alt="">
-                
-                <div class="stats_cards_text">
-                    <h2>46,328</h2>
-                    <p class="body_regular_2">Clubs</p>
-                </div>
-            </div>
-
-            <div class="stats_cards">
-                <img src="imgs/Icon_6.svg" alt="">
-                
-                <div class="stats_cards_text">
-                    <h2>828,867</h2>
-                    <p class="body_regular_2">Events Booked</p>
-                </div>
-            </div>
-
-            <div class="stats_cards">
-                <img src="imgs/Icon_7.svg" alt="">
-
-                <div class="stats_cards_text">
-                    <h2>1,926,436</h2>
-                    <p class="body_regular_2">Payments</p>
-                </div>
-            </div>
-
-        </div>
 
     </section>
 
@@ -210,54 +244,75 @@
     </section>
 
     <section class="article">
-        <div class="article_header">
-            <img src="imgs/Image_1.png" id="article_header" alt="">
-        </div>
-
-        <div class="article_copy">
-            <p class="body_medium_2"> Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
-
-            <div class="article_author">
-                <h4> <span class="green_highlight">Tim Smith</span></h4>
-
-                <p class="body_regular_2">British Dragon Boat Racing Association</p>
-            </div>
-        </div>
-
-        <div class="article_clients">
-            <div class="article_logos">
-                
-                <img src="imgs/Client_Logo_1.svg" alt="">
-
-                <img src="imgs/Client_Logo_2.svg" alt="">
-    
-                <img src="imgs/Client_Logo_3.svg" alt="">
-    
-                <img src="imgs/Client_Logo_4.svg" alt="">
-    
-                <img src="imgs/Client_Logo_5.svg" alt="">
-    
-                <img src="imgs/Client_Logo_6.svg" alt="">
-
-            </div>
-
-            <div class="button_2">
-                <a href="#" class="button_2"> Meet all customers <img src="imgs/Green_Arrow.svg" alt=""></a>
-
-
-
-            </div>
-
-        </div>
-
-
+       <div class="wrapper_article">
+           <div class="article_left">
+              <div class="article_header">
+                  <img src="imgs/Image_1.png" id="article_header" alt="">
+              </div>
+           </div>
+   
+           <div class="article_right">
+                       <div class="article_copy">
+                       <p class="body_medium_2"> Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+               
+                       <div class="article_author">
+                           <h4> <span class="green_highlight">Tim Smith</span></h4>
+               
+                           <p class="body_regular_2">British Dragon Boat Racing Association</p>
+                       </div>
+                       </div>
+               
+                       <div class="article_clients_mobile">
+                       <div class="article_logos_mobile">
+                           
+                           <img src="imgs/Client_Logo_1.svg" alt="">
+               
+                           <img src="imgs/Client_Logo_2.svg" alt="">
+               
+                           <img src="imgs/Client_Logo_3.svg" alt="">
+               
+                           <img src="imgs/Client_Logo_4.svg" alt="">
+               
+                           <img src="imgs/Client_Logo_5.svg" alt="">
+               
+                           <img src="imgs/Client_Logo_6.svg" alt="">
+                       </div>
+   
+                           <div class="button_2">
+                               <a href="#" class="button_2"> Meet all customers <img src="imgs/Green_Arrow.svg" alt=""></a>
+                           </div>
+                       </div>
+   
+                       <div class="article_clients_desktop">
+                           <div class="article_logos_desktop">
+                               
+                               <img src="imgs/Client_Logo_1.svg" alt="">
+               
+                               <img src="imgs/Client_Logo_2.svg" alt="">
+                   
+                               <img src="imgs/Client_Logo_3.svg" alt="">
+                   
+                               <img src="imgs/Client_Logo_4.svg" alt="">
+                   
+                               <img src="imgs/Client_Logo_5.svg" alt="">
+                   
+                               <img src="imgs/Client_Logo_6.svg" alt="">
+                               
+                               <div class="button_2">
+                                   <a href="#" class="button_2"> Meet all customers <img src="imgs/Green_Arrow.svg" alt=""></a>
+                               </div>
+                           </div>
+           
+                       </div>
+           </div>
+       </div>
     </section>
 
     <section class="articles">
         
         <div class="articles_text">
-            <h2 class="h2_center">Caring is the new marketing</h2>
-            <p class="body_regular_2_center">The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
+            <h2 class="h2">Caring is the new marketing</h2>
+            <p class="body_regular_2">The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
         </div>
 
         <div class="articles_card_section">
@@ -268,7 +323,7 @@
                 </div>
 
                 <div class="article_box">
-                    <h4 class="h4_center">Creating Streamlined Safeguarding Processes with OneRen</h4>
+                    <h4 class="h4">Creating Streamlined Safeguarding Processes with OneRen</h4>
     
                     <a href="#" class="button_3"> Read More <img src="imgs/Green_Arrow.svg" alt=""></a>
                 </div>
@@ -280,7 +335,7 @@
                 </div>
             
                 <div class="article_box">
-                    <h4 class="h4_center">What are your safeguarding responsibilities and how can you manage them?</h4>
+                    <h4 class="h4">What are your safeguarding responsibilities and how can you manage them?</h4>
     
                     <a href="#" class="button_3"> Read More <img src="imgs/Green_Arrow.svg" alt=""></a>
                 </div>
@@ -292,7 +347,7 @@
                 </div>
     
                 <div class="article_box">
-                    <h4 class="h4_center">Creating Streamlined Safeguarding Processes with OneRen</h4>
+                    <h4 class="h4">Creating Streamlined Safeguarding Processes with OneRen</h4>
     
                     <a href="#" class="button_3"> Read More <img src="imgs/Green_Arrow.svg" alt=""></a>
                 </div>
@@ -303,9 +358,11 @@
     </section>
 
     <section class="CTA">
-        <h1>Pellent esque suscipit fringilla libero eu.</h1>
-
-        <a href="#" class="button_4"> Read More <img src="imgs/White_Arrow.svg" alt=""></a>
+       <div class="wrapper_CTA">
+           <h1>Pellent esque suscipit fringilla libero eu.</h1>
+   
+           <a href="#" class="button_4"> Read More <img src="imgs/White_Arrow.svg" alt=""></a>
+       </div>
     </section>
 
     <footer class="footer_mobile">
@@ -362,12 +419,67 @@
 
             <p class="body_regular_3_white">Copyright © 2020 Nexcent ltd. <br>All rights reserved </p>
         </div>
-
     </footer>
 
     <footer class="footer_desktop">
-
+        <div class="wrapper_footer_desktop">
+            <div class="footer_desktop_left">
+                <a href="#"> <img src="imgs/Nexcent_Logo_White.svg" alt="" class="footer_mobile_logo"> </a> 
+                
+                <p class="body_regular_3_white">Copyright © 2020 Nexcent ltd. <br>All rights reserved </p>
+                
+                <div class="footer_social_media">
+                    <a href="#"> <img src="imgs/Icon_Instagram.svg" alt=""> </a>
+                    <a href="#"> <img src="imgs/Icon_Dribble.svg" alt=""> </a>
+                    <a href="#"> <img src="imgs/Icon_Twitter.svg" alt=""> </a>
+                    <a href="#"> <img src="imgs/Icon_Youtube.svg" alt=""> </a>
+                </div>
+            </div>
+    
+            <div class="footer_mobile_links">
+                    <ul>
+                        <a href="#" id="footer_header">Contact</a>
+                        
+                        <li><a href="#" class="">About Us</a></li>
+                        <li><a href="" class="">Blog</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Testimonials</a></li>
+                    </ul>
+                        
+                    <ul>
+                    <a href="#" id="footer_header">Support</a>
+                        <li><a href="#" class="">Help Center</a></li>
+                        <li><a href="#" class="">Terms of Service</a></li>
+                        <li><a href="#" class="">Legal</a></li>
+                        <li><a href="#" class="">Privacy Policy</a></li>
+                        <li><a href="#" class="">Status</a></li>
+                    </ul>
+    
+                
+                    <div class="footer_form_section">
+                        <h4 class="h4_form">Stay up to date</h4>
+                        
+                       <div class="footer_form_full">
+                           <form class="footer_form">
+                              
+                            <input type="text" name="Email Address" value="" placeholder="Email Address" id="form_input">
+                               
+                               
+                            <div class="input-group-append">
+                                   <span class="input-group-text">
+                                     <i class="fas fa-eye" id="show_eye"><img src="imgs/Icon_Send.svg" alt=""></i>
+                                   </span>
+                            </div>
+                           
+                            </form>
+                       </div>
+                    </div>
+            </div>
+        </div>
     </footer>
+
+
     
     
 </body>
