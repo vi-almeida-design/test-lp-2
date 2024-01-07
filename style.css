@@ -215,7 +215,7 @@ section.copy{
 }
 
 .copy_image img{
-    width: 100%;
+    max-width: 100%;
 }
 
 /*End: Copy*/
@@ -300,7 +300,7 @@ section.copy_2{
 }
 
 .copy_image img{
-    width: 100%;
+    max-width: 100%;
 }
 
 /*End: Copy_2*/
