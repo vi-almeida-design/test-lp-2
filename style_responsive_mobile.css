@@ -120,8 +120,10 @@
         align-self: center;
     }
 
-    .header_right img, .copy_image {
-        max-width: 520px;
+    .header_right img, .copy_image img {
+        max-width: 85%;
+        display: block;
+        margin: auto;
     }
 
     .clients_logos{
