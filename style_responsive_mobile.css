@@ -121,9 +121,9 @@
     }
 
     .header_right img, .copy_image img {
-        max-width: 75%;
         display: block;
         margin: auto;
+        max-width: 75%
     }
 
     .clients_logos{
